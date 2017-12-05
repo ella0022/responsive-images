@@ -1,7 +1,55 @@
-* {
-    box-sizing: border-box;
+/* All images used belong to:
+
+Markus Spiske - https://500px.com/markusspiske
+
+Yinan Chen - https://500px.com/webmaster85
+
+Fahim Akhter - https://500px.com/fahimakhter */
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
 }
 
-h1 {
-  color: #ff0066;
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  margin-top: 2.5%;
+}
+
+img {
+  max-width: 90%;
+}
+
+  img:hover {
+    transition: transform;
+    transition-timing-function: ease-in 0.5s;
+    transform: rotate(10deg);
+  }
+
+picture {
+  max-width: 90%;
+}
+
+  picture:hover {
+    transition: transform;
+    transition-timing-function: ease-in 0.5s;
+    transform: rotate(7deg);
+  }
+
+@media screen and (min-width: 600px) {
+  li {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  li {
+    width: 25%;
+  }
 }
